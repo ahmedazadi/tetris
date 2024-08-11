@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>tetris</title>
+  </head>
+  <body>
+    <main class="main-container">
+      <canvas id="canvas"></canvas>
+      <div class="info-container">
+        <!-- timer -->
+        <div class="info-section-container">
+          <h2 class="info-header">Score</h2>
+          <div id="score" class="info-holder">0</div>
+        </div>
+
+        <!-- score -->
+        <div class="info-section-container">
+          <h2 class="info-header">Timer</h2>
+          <div id="time" class="info-holder">0:0</div>
+        </div>
+
+        <!-- next block -->
+        <div class="info-section-container">
+          <h2 class="info-header">Next</h2>
+          <canvas id="secondaryCanvas"></canvas>
+        </div>
+      </div>
+      <div class="menu-background" id="menuBackground">
+        <div class="menu">
+          <h2 class="header">Menu</h2>
+          <button id="startButton" class="button">Start Game</button>
+          <!-- <button id="options" class="button" disabled>Options</button> -->
+        </div>
+      </div>
+    </main>
+    <script src="shapes.js"></script>
+    <script src="/main.js"></script>
+  </body>
+</html>
